@@ -6,7 +6,7 @@ const Project = require("./models/Project");
 const Assignment = require("./models/Assignment");
 
 
-const MONGO_URI = "mongodb+srv://ajaymathesh:aj2002AJ@mycluster007.zaude1z.mongodb.net/geekyants-task?retryWrites=true&w=majority&appName=Mycluster007";
+const MONGO_URI = process.env.MONGO_URI;
 console.log(MONGO_URI);
 
 

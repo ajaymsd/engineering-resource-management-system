@@ -1,18 +1,13 @@
 require('dotenv').config();
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
-const User = require("./models/User");
-const Project = require("./models/Project");
-const Assignment = require("./models/Assignment");
-
-
-const MONGO_URI = process.env.MONGO_URI;
-console.log(MONGO_URI);
-
+const User = require("./src/models/User");
+const Project = require("./src/models/Project");
+const Assignment = require("./src/models/Assignment");
 
 const runSeeder = async () => {
   try {
-    await mongoose.connect(MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("Database connected");
 
     await User.deleteMany();

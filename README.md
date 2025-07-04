@@ -53,9 +53,6 @@ A complete full-stack application to manage engineers, projects, assignments, an
 ### 2️⃣ Installation Process
 
 ```bash
-git clone https://github.com/yourusername/engineering-resource-management.git
-cd engineering-resource-management
-
 # Backend Setup
 cd backend
 npm install

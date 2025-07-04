@@ -74,6 +74,12 @@ MONGO_URI=mongodb://localhost:27017/resource_management
 JWT_SECRET_KEY=your_secret_key
 ```
 
+**Frontend **``** Example**
+
+```env
+VITE_API_BASE_URL="http://localhost:8181/api/v1"
+```
+
 ```
 
 ---
